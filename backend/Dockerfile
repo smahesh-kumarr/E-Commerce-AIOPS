@@ -41,5 +41,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
 # Use dumb-init to handle signals properly
 ENTRYPOINT ["dumb-init", "--"]
 
-# Start application
-CMD ["node", "server.js"]
+# Start application with optional seeding
+CMD ["sh", "-c", "node scripts/seed.js 2>/dev/null || true && node server.js"]
