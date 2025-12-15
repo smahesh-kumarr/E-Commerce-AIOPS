@@ -79,6 +79,8 @@ docker build -t ecommerce-frontend:latest .
 docker build -t your-registry/ecommerce-frontend:latest .
 ```
 
+
+
 ### Run Frontend Container
 
 ```bash
@@ -182,6 +184,7 @@ docker build -t ecommerce-backend:latest .
 # Or with registry
 docker build -t your-registry/ecommerce-backend:latest .
 ```
+
 
 ### Run Backend Container
 
